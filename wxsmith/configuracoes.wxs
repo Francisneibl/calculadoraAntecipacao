@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="configuracoes">
+		<size>451,256</size>
+		<id_arg>0</id_arg>
+		<handler function="OnInit" entry="EVT_INIT_DIALOG" />
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="txt_deb" member="yes">
+			<pos>136,64</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="txt_cred" member="yes">
+			<pos>136,88</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="txt_6x" member="yes">
+			<pos>136,112</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="txt_12x" member="yes">
+			<pos>136,136</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="txt_ant" member="yes">
+			<pos>136,160</pos>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="btn_cancelar" member="yes">
+			<label>CANCELAR</label>
+			<pos>136,208</pos>
+			<handler function="Onbtn_cancelarClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxButton" name="ID_BUTTON2" variable="btn_ok" member="yes">
+			<label>OK</label>
+			<pos>248,208</pos>
+			<handler function="Onbtn_okClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>DEFINIR VALOR DE TAXAS</label>
+			<pos>120,8</pos>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>TAXA DE DEBITO</label>
+			<pos>45,65</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>TAXA CREDITO A VISTA</label>
+			<pos>10,92</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>TAXA CREDITO 6X</label>
+			<pos>35,116</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+			<label>TAXA CREDITO 12X</label>
+			<pos>32,140</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+			<label>TAXA ANTECIPACAO</label>
+			<pos>20,165</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+			<label></label>
+			<pos>96,40</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL6" variable="txt_ant_elo" member="yes">
+			<pos>264,160</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL7" variable="txt_12x_elo" member="yes">
+			<pos>264,136</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL8" variable="txt_6x_elo" member="yes">
+			<pos>264,112</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL9" variable="txt_cred_elo" member="yes">
+			<pos>264,88</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL10" variable="txt_deb_elo" member="yes">
+			<pos>264,64</pos>
+		</object>
+		<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
+			<label>ELO</label>
+			<pos>248,40</pos>
+			<size>176,152</size>
+		</object>
+	</object>
+</wxsmith>

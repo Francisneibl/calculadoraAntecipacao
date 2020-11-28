@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="CalculadoraAntecipacaoFrame">
+		<title>Calculadora de Antecipacao</title>
+		<centered>1</centered>
+		<icon>icon-mao.png</icon>
+		<size>304,610</size>
+		<minsize>320,640</minsize>
+		<maxsize>320,640</maxsize>
+		<handler function="OnClose1" entry="EVT_CLOSE" />
+		<handler function="OnPaint" entry="EVT_PAINT" />
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+			<label>VALOR TOTAL</label>
+			<pos>10,20</pos>
+			<style>wxALIGN_CENTRE</style>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="txt_vlr_total" member="yes">
+			<pos>88,16</pos>
+			<size>118,21</size>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE1" variable="cb_frm_pg" member="yes">
+			<content>
+				<item>DEBITO</item>
+				<item>CREDITO</item>
+			</content>
+			<selection>0</selection>
+			<pos>152,64</pos>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="btn_calc" member="yes">
+			<label>SIMULAR</label>
+			<pos>208,16</pos>
+			<size>88,24</size>
+			<handler function="Onbtn_calcClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxChoice" name="ID_CHOICE2" variable="cb_condicao" member="yes">
+			<content>
+				<item>A VISTA</item>
+				<item>PARCELADO</item>
+			</content>
+			<selection>0</selection>
+			<pos>152,96</pos>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="txt_num_par" member="yes">
+			<value>2</value>
+			<min>2</min>
+			<max>12</max>
+			<pos>152,128</pos>
+			<size>40,21</size>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrl2" member="yes">
+			<pos>8,224</pos>
+			<size>288,240</size>
+			<enabled>0</enabled>
+			<focused>1</focused>
+			<fg>#FF0000</fg>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Tahoma</face>
+			</font>
+			<style>wxTE_NO_VSCROLL|wxTE_MULTILINE</style>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+			<label>FORMA DE PAGAMENTO</label>
+			<pos>16,64</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+			<label>CONDICAO</label>
+			<pos>88,96</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+			<label>PARCELAS</label>
+			<pos>88,128</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+			<label>VALOR BRUTO:</label>
+			<pos>72,160</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+			<label>VALOR LIQUIDO:</label>
+			<pos>64,192</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+			<label>TOTAL PARCELAS ANTECIPADAS:</label>
+			<pos>17,472</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+			<label>TOTAL PERDA COM ANTECIPACAO:</label>
+			<pos>3,496</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT9" variable="txt_tot_par_ant" member="yes">
+			<label>R$ 0,00</label>
+			<pos>200,472</pos>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT10" variable="txt_tot_perda" member="yes">
+			<label>R$ 0,00</label>
+			<pos>200,496</pos>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT11" variable="txt_valor_bruto" member="yes">
+			<label>R$ 0,00</label>
+			<pos>152,160</pos>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT12" variable="txt_vlr_liquido" member="yes">
+			<label>R$ 0,00</label>
+			<pos>152,192</pos>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT13" variable="StaticText9" member="yes">
+			<label>TOTAL PERDAS NA VENDA:</label>
+			<pos>48,520</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT14" variable="txt_perdas" member="yes">
+			<label>R$ 0,00</label>
+			<pos>200,520</pos>
+			<fg>#FD271C</fg>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Arial</face>
+			</font>
+		</object>
+		<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="btn_config" member="yes">
+			<bitmap>maintenance_filled_50px.png</bitmap>
+			<pos>8,96</pos>
+			<size>56,56</size>
+			<handler function="Onbtn_configClick" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="rd_elo" member="yes">
+			<label>ELO?</label>
+			<pos>216,128</pos>
+			<size>64,13</size>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT15" variable="StaticText10" member="yes">
+			<label>ACONSELHA-SE COBRAR:</label>
+			<pos>48,556</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT16" variable="StaticText11" member="yes">
+			<label>VALOR PARCELAS:</label>
+			<pos>82,578</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT17" variable="txt_aumento" member="yes">
+			<label>R$ 0,00</label>
+			<pos>192,552</pos>
+			<fg>#00B000</fg>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face></face>
+			</font>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT18" variable="txt_parc_aum" member="yes">
+			<label>R$ 0,00</label>
+			<pos>192,576</pos>
+			<fg>#00B000</fg>
+			<font>
+				<size>12</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face></face>
+			</font>
+		</object>
+		<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+			<pos>8,544</pos>
+			<size>288,0</size>
+		</object>
+		<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
+			<pos>8,536</pos>
+			<size>288,64</size>
+		</object>
+	</object>
+</wxsmith>
